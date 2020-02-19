@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => (
           paddingRight: `1rem`
         }}
         >
-        Projects
+          Projects
         </Link>
         <Link
         to="/about"
@@ -54,7 +54,7 @@ const Header = ({ siteTitle }) => (
           paddingRight: `1rem`
         }}
         >
-        About
+          About
         </Link>
       </h1>
     </div>
