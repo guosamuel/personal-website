@@ -5,7 +5,7 @@ export const interview = [
   },
   {
     question: "How did you end up in your current career?",
-    answer: "Funny enough, I wasn’t always a software developer. I got my Bachelor of Science in Mechanical Engineering at Columbia University in 2014. From there, I was a Fluid Systems Engineer for a few years, and then as a Field and Project Engineer in a construction and signal firm that works closely with the MTA. I decided to take a leap of faith to pursue coding as a software developer because it looked like technology, and code for that matter, will be at the forefront for the next upcoming years. So far, I’m loving code. Even when I’m not working on it, I would catch myself thinking about it."
+    answer: "Funnily enough, I wasn’t always a software developer. I got my Bachelor of Science in Mechanical Engineering at Columbia University in 2014. From there, I was a Fluid Systems Engineer for a few years, and then as a Field and Project Engineer in a construction and signal firm that works closely with the MTA. I decided to take a leap of faith to pursue coding as a software developer because it looked like technology, and code for that matter, will be at the forefront for the next upcoming years. So far, I’m loving code. Even when I’m not working on it, I would catch myself thinking about it."
   },
   {
     question: "Weren’t you scared about taking that leap? What would you have done if it didn't work out?",
