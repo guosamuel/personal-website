@@ -4,8 +4,7 @@ const Question = ({ question }) => {
   return (
     <div
       style={{
-        float: `left`,
-        paddingRight: `1rem`,
+        float: `left`
       }}
     >
       <p>{question}</p>

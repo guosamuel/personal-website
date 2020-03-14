@@ -10,15 +10,20 @@ import Question from "../components/question"
 
 const About = () => {
 
-  const dialogue = interview.map( qAndA => {
-    console.log("inside of the mapping", qAndA)
+  const dialogue = interview.map( (qAndA,index) => {
+    return (
+      <div key={index}>
+        <Question question={qAndA.question} />
+        <br />
+        <br />
+      </div>
+    )
   })
 
   return (
     <Layout>
       <SEO title="About" />
-      <h1>Who is Samuel?</h1>
-      <div>meep</div>
+      <div>{dialogue}</div>
     </Layout>
   )
 }

@@ -1,7 +1,8 @@
 export const interview = [
   {
     question: "How would you describe yourself?",
-    answer: "I’m a New Yorker through and through. With New York’s changing scenery, I would say my personality is reflected upon that. It can be as simple and calm as strolling through a park or impulsively joining an improv group to cause funny scenes in the city. Life’s always changing, so might as well hop on that wave and ride with it."},
+    answer: "I’m a New Yorker through and through. With New York’s changing scenery, I would say my personality is reflected upon that. It can be as simple and calm as strolling through a park or impulsively joining an improv group to cause funny scenes in the city. Life’s always changing, so might as well hop on that wave and ride with it."
+  },
   {
     question: "How did you end up in your current career?",
     answer: "Funny enough, I wasn’t always a software developer. I got my Bachelor of Science in Mechanical Engineering at Columbia University in 2014. From there, I was a Fluid Systems Engineer for a few years, and then as a Field and Project Engineer in a construction and signal firm that works closely with the MTA. I decided to take a leap of faith to pursue coding as a software developer because it looked like technology, and code for that matter, will be at the forefront for the next upcoming years. So far, I’m loving code. Even when I’m not working on it, I would catch myself thinking about it."
