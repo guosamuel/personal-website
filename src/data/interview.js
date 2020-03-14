@@ -1,4 +1,4 @@
-export default interview = [
+export const interview = [
   {
     question: "How would you describe yourself?",
     answer: "I’m a New Yorker through and through. With New York’s changing scenery, I would say my personality is reflected upon that. It can be as simple and calm as strolling through a park or impulsively joining an improv group to cause funny scenes in the city. Life’s always changing, so might as well hop on that wave and ride with it."},
@@ -26,5 +26,5 @@ export default interview = [
     question: "Wow, who would’ve thought a simple phrase like that would’ve stuck and motivated you to this day. All right, I think it’s about time we wrapped this up. Any last words you have for those out there reading this right now?",
     answer: "First, thank you for reading the entire page. Hopefully I was able to shed some light on who I am as a person. Second, if you’re interested in checking out my work or blogs, please click on the appropriate link on the top right corner of this page."
   }
-  
+
 ]
