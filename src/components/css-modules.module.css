@@ -1,0 +1,9 @@
+.question {
+  float: left;
+  padding-right: 1rem
+}
+.answer {
+  float:right;
+  padding-left: 4rem;
+  padding-right: 4rem
+}

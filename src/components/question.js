@@ -1,12 +1,9 @@
 import React from 'react'
+import styles from "./css-modules.module.css"
 
 const Question = ({ question }) => {
   return (
-    <div
-      style={{
-        float: `left`
-      }}
-    >
+    <div className={styles.question}>
       <p>{question}</p>
     </div>
   )

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { interview } from "../data/interview"
 import Question from "../components/question"
-
+import Answer from "../components/answer"
 
 
 const About = () => {
@@ -15,6 +15,7 @@ const About = () => {
       <div key={index}>
         <Question question={qAndA.question} />
         <br />
+        <Answer answer={qAndA.answer} />
         <br />
       </div>
     )
