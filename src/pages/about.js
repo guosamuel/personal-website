@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { interview } from "../data/interview"
+import { interview } from "../information/interview"
 import Question from "../components/question"
 import Answer from "../components/answer"
 
