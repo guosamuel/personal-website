@@ -37,6 +37,16 @@ const Header = ({ siteTitle }) => (
           Blogs
         </Link>
         <Link
+          to="/skills"
+          style={{
+            color: `orange`,
+            float: `right`,
+            paddingRight: `1rem`
+          }}
+        >
+          Skills
+        </Link>
+        <Link
         to="/projects"
         style={{
           color: `orange`,

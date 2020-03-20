@@ -8,7 +8,7 @@ import BlogIndex from "../components/blogIndex"
 
 function Blogs({ data }){
   const { edges } = data.allMarkdownRemark
-  console.log(edges)
+
   const allBlogIndexes = edges.map( blog => {
     const { path, date, title } = blog.node.frontmatter
     const { id, excerpt } = blog.node
