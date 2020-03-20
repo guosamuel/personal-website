@@ -6,12 +6,13 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const imageURL = 'https://media-exp1.licdn.com/dms/image/C5603AQH9KmTFZP-zQA/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=fSXinxjcWcKo-vKhZLw8MJlyy18ELJxzQnZQ-UD_cV4'
+// <img src={imageURL} className={styles.avatar} alt="" />
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className={styles.user}>
-      <img src={imageURL} className={styles.avatar} alt="" />
+      <Image />
       <div className={styles.description}>
         <h2 className={styles.username}>Hi, Samuel here!</h2>
         <p className={styles.excerpt}>

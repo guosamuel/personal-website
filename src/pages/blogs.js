@@ -30,19 +30,19 @@ function Blogs({ data }){
 
 export const blogIndexQuery = graphql`
   query blogIndexQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            path
-            date
-            title
-          }
-          excerpt(pruneLength: 1000)
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          date(formatString: "MM-DD-YYYY")
+          path
+          title
         }
+        excerpt(pruneLength: 1000)
       }
     }
+  }
   }
 `
 export default Blogs

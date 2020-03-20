@@ -3,7 +3,7 @@ import React from "react"
 const BlogIndex = ({ path, date, title, excerpt }) => {
   return (
     <>
-    <h2>{title}</h2>
+    <h3>{title}</h3>
     <small>Published: {date}</small>
     <br />
     <br />
