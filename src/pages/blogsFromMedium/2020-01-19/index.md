@@ -1,6 +1,6 @@
 ---
 path: "https://medium.com/@guosamuel1114/knowing-when-to-componentize-your-code-8b3901d19ab"
-date: "January 19, 2020"
+date: "2020-01-19"
 title: "Knowing When To Componentize Your Code"
 ---
 

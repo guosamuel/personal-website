@@ -1,6 +1,6 @@
 ---
 path: "https://medium.com/better-programming/stacks-and-queues-7c322b5f4e35"
-date: "February 16, 2020"
+date: "2020-02-16"
 title: "An Introduction to Stacks and Queues"
 ---
 

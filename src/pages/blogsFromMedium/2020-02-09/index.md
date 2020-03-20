@@ -1,6 +1,6 @@
 ---
 path: "https://medium.com/javascript-in-plain-english/array-and-object-de-structuring-in-javascript-da3e73867781"
-date: "February 9, 2020"
+date: "2020-02-09"
 title: "Array and Object De-structuring in JavaScript"
 ---
 

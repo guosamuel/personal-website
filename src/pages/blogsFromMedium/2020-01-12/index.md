@@ -1,6 +1,6 @@
 ---
 path: "https://medium.com/swlh/understanding-whats-happening-under-the-hood-with-source-codes-and-existing-methods-3bca47cb5757"
-date: "January 12, 2020"
+date: "2020-01-12"
 title: "Understanding What’s Happening “Under the Hood” with Source Codes and Existing Methods"
 ---
 

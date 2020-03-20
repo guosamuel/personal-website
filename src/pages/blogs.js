@@ -39,7 +39,7 @@ export const blogIndexQuery = graphql`
             date
             title
           }
-          excerpt
+          excerpt(pruneLength: 1000)
         }
       }
     }

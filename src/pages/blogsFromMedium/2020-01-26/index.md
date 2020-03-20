@@ -1,6 +1,6 @@
 ---
 path: "https://medium.com/@guosamuel1114/deploying-an-application-to-netlify-and-heroku-with-proper-configurations-5c516d9e3f4c"
-date: "January 26, 2020"
+date: "2020-01-26"
 title: "Deploying An Application to Netlify and Heroku With Proper Configurations"
 ---
 

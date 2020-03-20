@@ -1,6 +1,6 @@
 ---
 path: "https://medium.com/@guosamuel1114/implementation-of-nested-and-un-nested-routes-with-restful-conventions-f84285edfde6"
-date: "January 5, 2020"
+date: "2020-01-05"
 title: "Implementation of Nested and Un-nested Routes With RESTful Conventions"
 ---
 

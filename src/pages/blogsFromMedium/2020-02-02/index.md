@@ -1,6 +1,6 @@
 ---
 path: "https://medium.com/@guosamuel1114/understanding-the-nuances-of-different-approaches-that-achieve-the-same-results-1cdabb4509a9"
-date: "February 2, 2020"
+date: "2020-02-02"
 title: "Understanding the Nuances of Different Approaches That Achieve the Same Results"
 ---
 

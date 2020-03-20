@@ -1,6 +1,6 @@
 ---
 path: "https://medium.com/javascript-in-plain-english/update-feature-while-double-checking-assumptions-8c42e30564d6"
-date: "October 27, 2019"
+date: "2019-10-27"
 title: "Fully understanding React by creating an Automatic Update Feature"
 ---
 
