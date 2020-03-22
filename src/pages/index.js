@@ -13,10 +13,15 @@ const imageURL = 'https://media-exp1.licdn.com/dms/image/C5603AQH9KmTFZP-zQA/pro
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      file(childImageSharp: {fixed: {originalName: {eq: "portfolio_picture.jpg"}}}) {
-        childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
+      allFile(filter: {childImageSharp: {fluid: {originalName: {eq: "portfolio_picture.jpg"}}}}) {
+        edges {
+          node {
+            childImageSharp {
+              id
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
@@ -30,7 +35,8 @@ const IndexPage = () => {
     <SEO title="Home" />
     <div className={styles.user}>
       <Img
-        fixed={data.file.childImageSharp.fixed}
+        className={styles.picture}
+        fluid={data.allFile.edges[0].node.childImageSharp.fluid}
         alt="Portfolio picture on the index page"
       />
       <div className={styles.description}>

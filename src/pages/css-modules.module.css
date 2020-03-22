@@ -1,7 +1,12 @@
 .user {
   display: flex;
+  /* display: inline-block; */
   align-items: center;
   margin: 0 auto 12px auto;
+}
+.picture {
+  /* max-width: 400px */
+  width: 22rem;
 }
 .user:last-child {
   margin-bottom: 0;
@@ -13,6 +18,7 @@
   margin: 0;
 }
 .description {
+  /* display: flex; */
   flex: 1;
   margin-left: 18px;
   padding: 12px;
