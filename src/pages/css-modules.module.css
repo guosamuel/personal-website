@@ -2,6 +2,7 @@
   display: flex;
   /* display: inline-block; */
   align-items: center;
+  /* top, right, bottom, left */
   margin: 0 auto 12px auto;
 }
 .picture {
@@ -37,4 +38,7 @@
 .answer {
   float:right;
   padding-left: 1rem
+}
+.icon {
+  width: 200px;
 }
