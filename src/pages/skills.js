@@ -10,13 +10,14 @@ import SEO from "../components/seo"
 const Skills = () => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: {relativeDirectory: {eq: "icons"}}) {
+      allFile(filter: {relativeDirectory: {eq: "icons"}}, sort: {fields: childImageSharp___fluid___originalName, order: ASC}) {
         edges {
           node {
             childImageSharp {
               id
               fluid {
                 ...GatsbyImageSharpFluid
+                originalName
               }
             }
           }
@@ -28,12 +29,17 @@ const Skills = () => {
   console.log("THIS IS IN THE SKILLS FOLDER", data)
 
   const icons = data.allFile.edges.map( icon => {
+    let metaData = icon.node.childImageSharp.fluid
+    let name = metaData.originalName
+    
     return (
+      <div key={icon.node.childImageSharp.id}>
         <Img
           className={styles.icon}
-          fluid={icon.node.childImageSharp.fluid}
-          alt="Portfolio picture on the index page"
+          fluid={metaData}
+          alt={name.substring(3, name.length-4)}
         />
+      </div>
     )
   })
   return (
