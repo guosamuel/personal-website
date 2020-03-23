@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./css-modules.module.css"
 import Icon from "../components/icon"
+import { websiteLinks } from "../information/icon-links"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -27,23 +28,19 @@ const Skills = () => {
     }
   `)
 
-  console.log("THIS IS IN THE SKILLS FOLDER", data)
+  console.log("THIS IS IN THE SKILLS FOLDER", websiteLinks)
 
-  const icons = data.allFile.edges.map( icon => {
+  const icons = data.allFile.edges.map( (icon,index) => {
     let metaData = icon.node.childImageSharp.fluid
     let name = metaData.originalName
 
-    // {/*<Img
-    //   className={styles.icon}
-    //   fluid={metaData}
-    //   alt={name.substring(3, name.length-4)}
-    //   />*/}
     return (
       <div key={icon.node.childImageSharp.id}>
-        <Icon fluidData={metaData} altData={name.substring(3, name.length-4)} />
+        <Icon fluidData={metaData} altData={name.substring(3, name.length-4)} link={websiteLinks[index]}/>
       </div>
     )
   })
+
   return (
     <Layout>
       <SEO title="Skills" />
@@ -52,10 +49,6 @@ const Skills = () => {
       <div className={styles.icon_container}>
         {icons}
       </div>
-      {/*<Img
-        fluid={data.allFile.edges[0].node.childImageSharp.fluid}
-        alt="Gatsby icon"
-      />*/}
     </Layout>
   )
 }
