@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./css-modules.module.css"
+import Icon from "../components/icon"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -31,14 +32,15 @@ const Skills = () => {
   const icons = data.allFile.edges.map( icon => {
     let metaData = icon.node.childImageSharp.fluid
     let name = metaData.originalName
-    
+
+    // {/*<Img
+    //   className={styles.icon}
+    //   fluid={metaData}
+    //   alt={name.substring(3, name.length-4)}
+    //   />*/}
     return (
       <div key={icon.node.childImageSharp.id}>
-        <Img
-          className={styles.icon}
-          fluid={metaData}
-          alt={name.substring(3, name.length-4)}
-        />
+        <Icon fluidData={metaData} altData={name.substring(3, name.length-4)} />
       </div>
     )
   })
