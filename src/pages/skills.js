@@ -29,13 +29,11 @@ const Skills = () => {
 
   const icons = data.allFile.edges.map( icon => {
     return (
-      <div key={icon.node.id}>
         <Img
           className={styles.icon}
           fluid={icon.node.childImageSharp.fluid}
           alt="Portfolio picture on the index page"
         />
-      </div>
     )
   })
   return (
@@ -43,7 +41,7 @@ const Skills = () => {
       <SEO title="Skills" />
       <h1>Skills</h1>
       <p>Skills page</p>
-      <div className={styles.user}>
+      <div className={styles.icon_container}>
         {icons}
       </div>
       {/*<Img
