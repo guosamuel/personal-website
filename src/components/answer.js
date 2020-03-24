@@ -1,10 +1,12 @@
 import React from 'react'
-import styles from "./css-modules.module.css"
+import './answer.css'
 
 const Answer = ({ answer }) => {
   return (
-    <div className={styles.answer}>
-      <p>{answer}</p>
+    <div className="talk-bubble tri-right round btm-right-in">
+      <div className="talktext">
+        <p>{answer}</p>
+      </div>
     </div>
   )
 }
