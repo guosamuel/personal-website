@@ -13,12 +13,14 @@ const About = () => {
 
   const dialogue = interview.map( (qAndA,index) => {
     return (
-      <div key={index}>
+      // <div key={index}>
+      <>
         <Question question={qAndA.question} />
         <br />
         <Answer answer={qAndA.answer} />
         <br />
-      </div>
+      </>
+      // </div>
     )
   })
 

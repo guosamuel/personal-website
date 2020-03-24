@@ -1,10 +1,10 @@
 import React from 'react'
-import './question.css'
+import './text-bubble.css'
 
 const Question = ({ question }) => {
   return (
-    <div className="talk-bubble tri-right round btm-left-in">
-      <div className="talktext">
+    <div className="yours messages">
+      <div className="message last">
         <p>{question}</p>
       </div>
     </div>
