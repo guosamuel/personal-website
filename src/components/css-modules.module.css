@@ -1,11 +1,13 @@
 .question {
-  float: left;
-  padding-right: 1rem
+  /* originally mine */
+  /* float: left;
+  padding-right: 1rem; */
 }
 .answer {
+  /* originally mine
   float:right;
   padding-left: 4rem;
-  padding-right: 4rem
+  /* padding-right: 4rem */
 }
 .icon {
   height: 200px;

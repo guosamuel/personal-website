@@ -1,10 +1,12 @@
 import React from 'react'
-import styles from "./css-modules.module.css"
+import './question.css'
 
 const Question = ({ question }) => {
   return (
-    <div className={styles.question}>
-      <p>{question}</p>
+    <div className="talk-bubble tri-right round btm-left-in">
+      <div className="talktext">
+        <p>{question}</p>
+      </div>
     </div>
   )
 }

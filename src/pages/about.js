@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import styles from "./css-modules.module.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -24,7 +25,7 @@ const About = () => {
   return (
     <Layout>
       <SEO title="About" />
-      <div>{dialogue}</div>
+      <div className={styles.dialogue_container}>{dialogue}</div>
     </Layout>
   )
 }

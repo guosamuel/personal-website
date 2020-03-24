@@ -31,14 +31,14 @@
 .excerpt {
   margin: 0;
 }
-.question {
+/* .question {
   float: left;
   padding-right: 1rem
 }
 .answer {
   float:right;
   padding-left: 1rem
-}
+} */
 .icon_container {
   display: flex;
   flex-wrap: wrap;
@@ -52,3 +52,6 @@
   width: 200px;
   margin: 0.5rem
 } */
+.dialogue_container {
+  padding: 5% 5%
+}
