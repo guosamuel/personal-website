@@ -8,6 +8,7 @@ function Icon({ fluidData, altData, link }){
   const toggleHideIcon = () => {
     setHideIcon(!hideIcon)
   }
+
   // <p
   // style={{
   //   textAlign: 'center',

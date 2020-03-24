@@ -44,8 +44,14 @@ const Skills = () => {
   return (
     <Layout>
       <SEO title="Skills" />
-      <h1>Skills</h1>
-      <p>Skills page</p>
+      <p
+        style={{
+          fontSize: '1.5rem',
+          textAlign: 'center'
+        }}
+      >
+        Not sure what the icons mean? Click on them for more information!
+      </p>
       <div className={styles.icon_container}>
         {icons}
       </div>
