@@ -7,11 +7,12 @@ import SEO from "../components/seo"
 import BlogIndex from "../components/blogIndex"
 
 function Blogs({ data }){
-  const { edges } = data.allMarkdownRemark
+  console.log("I AM IN THE BLOG PAGE", data)
+  // const { edges } = data.allMarkdownRemark
 
-  const allBlogIndexes = edges.map( blog => {
-    const { path, date, title } = blog.node.frontmatter
-    const { id, excerpt } = blog.node
+  const allBlogIndexes = data.allMarkdownRemark.nodes.map( blog => {
+    const { path, date, title } = blog.frontmatter
+    const { id, excerpt } = blog
     return (
       <div key={id}>
         <BlogIndex path={path} date={date} title={title} excerpt={excerpt}/>
@@ -28,21 +29,38 @@ function Blogs({ data }){
   )
 }
 
+// export const blogIndexQuery = graphql`
+//   query blogIndexQuery {
+//     allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+//       edges {
+//         node {
+//           id
+//           frontmatter {
+//             date(formatString: "MM-DD-YYYY")
+//             path
+//             title
+//           }
+//         excerpt(pruneLength: 1000)
+//         }
+//       }
+//     }
+//   }
+// `
+
 export const blogIndexQuery = graphql`
   query blogIndexQuery {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
-    edges {
-      node {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {fileAbsolutePath: {regex: "/blogs/"}}) {
+      nodes {
         id
         frontmatter {
+          title
           date(formatString: "MM-DD-YYYY")
           path
-          title
         }
         excerpt(pruneLength: 1000)
       }
     }
   }
-  }
 `
+
 export default Blogs
