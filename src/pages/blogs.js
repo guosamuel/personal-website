@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import BlogIndex from "../components/blogIndex"
 
 function Blogs({ data }){
-  console.log("I AM IN THE BLOG PAGE", data)
+  // console.log("I AM IN THE BLOG PAGE", data)
   // const { edges } = data.allMarkdownRemark
 
   const allBlogIndexes = data.allMarkdownRemark.nodes.map( blog => {
@@ -49,7 +49,7 @@ function Blogs({ data }){
 
 export const blogIndexQuery = graphql`
   query blogIndexQuery {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {fileAbsolutePath: {regex: "/blogs/"}}) {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {fileAbsolutePath: {regex: "/blogsFromMedium/"}}) {
       nodes {
         id
         frontmatter {
