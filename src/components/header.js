@@ -12,11 +12,15 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: window.innerWidth < 2000 ? 960 : 0.8*window.innerWidth,
         padding: `1.45rem 1.0875rem`,
+        display: `flex`,
+        flexWrap: `wrap`,
+        justifyContent: `space-between`
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <div style={{fontSize: (Math.max(window.innerWidth, window.innerHeight)*0.04) > 40 ? 40 : `4vmax`}}>
+      <p style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -26,6 +30,9 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+      </p>
+      </div>
+      <div style={{ fontSize: (Math.max(window.innerWidth, window.innerHeight)*0.04) > 40 ? 40 : `2.75vmax`}}>
         <Link
           to="/blogs"
           style={{
@@ -66,7 +73,8 @@ const Header = ({ siteTitle }) => (
         >
           About
         </Link>
-      </h1>
+
+      </div>
     </div>
   </header>
 )
