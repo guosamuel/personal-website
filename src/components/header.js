@@ -19,7 +19,11 @@ const Header = ({ siteTitle }) => (
         justifyContent: `space-between`
       }}
     >
-      <div style={{fontSize: (Math.max(window.innerWidth, window.innerHeight)*0.04) > 40 ? 40 : `4vmax`}}>
+      <div style={{
+        fontSize: (Math.max(window.innerWidth, window.innerHeight)*0.04) > 40 ? 40 : `4vmax`,
+        marginTop: `0.5rem`,
+        marginBottom: `0.5rem`
+      }}>
       <p style={{ margin: 0 }}>
         <Link
           to="/"
@@ -32,7 +36,11 @@ const Header = ({ siteTitle }) => (
         </Link>
       </p>
       </div>
-      <div style={{ fontSize: (Math.max(window.innerWidth, window.innerHeight)*0.04) > 40 ? 40 : `2.75vmax`}}>
+      <div style={{
+        fontSize: (Math.max(window.innerWidth, window.innerHeight)*0.04) > 40 ? 40 : `2.75vmax`,
+        marginTop: `0.5rem`,
+        marginBottom: `0.5rem`
+      }}>
         <Link
           to="/blogs"
           style={{
