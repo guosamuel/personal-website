@@ -46,7 +46,8 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `orange`,
             float: `right`,
-            paddingRight: `1rem`
+            paddingRight: `1rem`,
+            textDecoration: `none`
           }}
         >
           Blogs
@@ -56,7 +57,8 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `orange`,
             float: `right`,
-            paddingRight: `1rem`
+            paddingRight: `1rem`,
+            textDecoration: `none`,
           }}
         >
           Skills
@@ -66,7 +68,8 @@ const Header = ({ siteTitle }) => (
         style={{
           color: `orange`,
           float: `right`,
-          paddingRight: `1rem`
+          paddingRight: `1rem`,
+          textDecoration: `none`,
         }}
         >
           Projects
@@ -76,7 +79,8 @@ const Header = ({ siteTitle }) => (
         style={{
           color: `orange`,
           float: `right`,
-          paddingRight: `1rem`
+          paddingRight: `1rem`,
+          textDecoration: `none`,
         }}
         >
           About
