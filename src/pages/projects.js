@@ -21,7 +21,10 @@ function Projects({data}) {
     <Layout>
       <SEO title="Projects" />
       <h1>Projects</h1>
-      <p>Welcome to the Projects Page</p>
+      <h2>
+        Note: Currently all of these projects are desktop friendly.
+        Mobile friendly coming soon!
+      </h2>
       <div>{allProjectIndexes}</div>
     </Layout>
   )
