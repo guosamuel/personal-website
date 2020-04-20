@@ -1,11 +1,13 @@
 import React from "react"
+import DemoVideo from './demoVideo'
 
-const ProjectIndex = ({ demo, link, github, title, excerpt }) => {
+const ProjectIndex = ({ demo, link, github, title, excerpt, embed }) => {
   return (
     <>
     <h3>{title}</h3>
     <p>{excerpt}</p>
     <br />
+    { embed ? <DemoVideo embed={embed} /> : null}
     { link ?
     <div>
       <a href={link} target="_blank">Link</a>
