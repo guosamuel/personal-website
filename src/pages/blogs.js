@@ -9,7 +9,7 @@ import BlogIndex from "../components/blogIndex"
 function Blogs({ data }){
   // console.log("I AM IN THE BLOG PAGE", data)
   // const { edges } = data.allMarkdownRemark
-  const [page, setPage] = useState(3)
+  const [page, setPage] = useState(0)
   // const [ leftHover, setLeftHover ] = useState(false)
   // const [ rightHover, setRightHover ] = useState(false)
   const [hover, setHover] = useState(false)
@@ -55,7 +55,7 @@ function Blogs({ data }){
           onClick={() => setPage(page-1)}
           onMouseEnter={toggleHover}
           onMouseLeave={toggleHover}
-          style={{cursor: hover ? `pointer` : null}}
+          style={{cursor: hover ? `pointer` : null, marginRight: '1rem'}}
         >
           {leftArrows}
         </span>
@@ -67,7 +67,7 @@ function Blogs({ data }){
           onClick={() => setPage(page+1)}
           onMouseEnter={toggleHover}
           onMouseLeave={toggleHover}
-          style={{cursor: hover ? `pointer` : null}}
+          style={{cursor: hover ? `pointer` : null, marginLeft: '1rem'}}
         >
           {rightArrows}
         </span>
