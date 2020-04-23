@@ -2,6 +2,7 @@
 github:  "https://github.com/guosamuel/stock-portfolio"
 link: "https://stock-portfolio-sg.herokuapp.com/"
 demo: null
+embed: null
 title: "SG Stock Portfolio"
 ---
 

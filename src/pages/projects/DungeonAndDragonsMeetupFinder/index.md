@@ -2,6 +2,7 @@
 github:  "https://github.com/J-Agens/dnd_meetup"
 link: "https://safe-hollows-92302.herokuapp.com/login"
 demo: "https://www.youtube.com/watch?v=ILOjklEh6zE&feature=youtu.be"
+embed: "https://www.youtube.com/embed/ILOjklEh6zE"
 title: "Dungeon and Dragons Meetup Finder"
 ---
 
