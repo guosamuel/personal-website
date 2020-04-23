@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
@@ -9,8 +9,31 @@ import BlogIndex from "../components/blogIndex"
 function Blogs({ data }){
   // console.log("I AM IN THE BLOG PAGE", data)
   // const { edges } = data.allMarkdownRemark
+  const [page, setPage] = useState(3)
+  // const [ leftHover, setLeftHover ] = useState(false)
+  // const [ rightHover, setRightHover ] = useState(false)
+  const [hover, setHover] = useState(false)
+  const BLOGSPERPAGE = 5
+  const totalPages = Math.ceil(data.allMarkdownRemark.nodes.length / BLOGSPERPAGE)
+  const leftArrows = "<<"
+  const rightArrows = ">>"
 
-  const allBlogIndexes = data.allMarkdownRemark.nodes.map( blog => {
+  const toggleHover = () => {
+    if (page === 0 || page === totalPages - 1) {
+      setHover(true)
+    } else {
+      setHover(!hover)
+    }
+  }
+  // const toggleLeftHover = () => {
+  //   setLeftHover(!leftHover)
+  // }
+  //
+  // const toggleRightHover = () => {
+  //   setRightHover(!rightHover)
+  // }
+
+  const allBlogIndexes = data.allMarkdownRemark.nodes.slice(page*BLOGSPERPAGE, (page+1)*BLOGSPERPAGE).map( blog => {
     const { path, date, title } = blog.frontmatter
     const { id, excerpt } = blog
     return (
@@ -25,6 +48,31 @@ function Blogs({ data }){
     <SEO title="Blogs" />
     <h1>Blogs</h1>
     <div>{allBlogIndexes}</div>
+    <div>
+      { page === 0 ?
+        null :
+        <span
+          onClick={() => setPage(page-1)}
+          onMouseEnter={toggleHover}
+          onMouseLeave={toggleHover}
+          style={{cursor: hover ? `pointer` : null}}
+        >
+          {leftArrows}
+        </span>
+      }
+      <span>Page {page+1} of {totalPages}</span>
+      { page === totalPages - 1 ?
+        null :
+        <span
+          onClick={() => setPage(page+1)}
+          onMouseEnter={toggleHover}
+          onMouseLeave={toggleHover}
+          style={{cursor: hover ? `pointer` : null}}
+        >
+          {rightArrows}
+        </span>
+      }
+    </div>
   </Layout>
   )
 }
