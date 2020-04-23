@@ -1,11 +1,12 @@
 import React from 'react'
+import styles from './css-modules.module.css'
 
 const DemoVideo = ({ embed }) => {
   return (
-    <div className="iframe-container">
+    <div className={styles.iframeContainer}>
       <iframe
-        width="560"
-        height="315"
+        width='100%'
+        height='100%'
         src={embed}
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -17,3 +18,5 @@ const DemoVideo = ({ embed }) => {
 }
 
 export default DemoVideo
+// width="560"
+// height="315"
