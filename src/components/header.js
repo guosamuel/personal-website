@@ -16,7 +16,8 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
         display: `flex`,
         flexWrap: `wrap`,
-        justifyContent: `space-between`
+        justifyContent: `space-between`,
+        fontFamily: "Jura"
       }}
     >
       <div style={{
