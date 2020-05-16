@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `black`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `orange`,
+            color: `white`,
             textDecoration: `none`,
           }}
         >
@@ -37,14 +37,14 @@ const Header = ({ siteTitle }) => (
       </p>
       </div>
       <div style={{
-        fontSize: (Math.max(window.innerWidth, window.innerHeight)*0.04) > 40 ? 40 : `2.75vmax`,
+        fontSize: (Math.max(window.innerWidth, window.innerHeight)*0.04) > 40 ? 28 : `2.75vmax`,
         marginTop: `0.5rem`,
         marginBottom: `0.5rem`
       }}>
         <Link
           to="/blogs"
           style={{
-            color: `orange`,
+            color: `white`,
             float: `right`,
             paddingRight: `1rem`,
             textDecoration: `none`
@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/skills"
           style={{
-            color: `orange`,
+            color: `white`,
             float: `right`,
             paddingRight: `1rem`,
             textDecoration: `none`,
@@ -66,7 +66,7 @@ const Header = ({ siteTitle }) => (
         <Link
         to="/projects"
         style={{
-          color: `orange`,
+          color: `white`,
           float: `right`,
           paddingRight: `1rem`,
           textDecoration: `none`,
@@ -77,7 +77,7 @@ const Header = ({ siteTitle }) => (
         <Link
         to="/about"
         style={{
-          color: `orange`,
+          color: `white`,
           float: `right`,
           paddingRight: `1rem`,
           textDecoration: `none`,
