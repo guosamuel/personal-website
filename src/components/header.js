@@ -28,65 +28,43 @@ const Header = ({ siteTitle }) => (
         marginBottom: `0.5rem`
       }}>
       */}
-      <div className={styles.name}>
-      <p style={{ margin: 0 }}>
+      <div className={styles.margins}>
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          className={styles.name}
         >
           {siteTitle}
         </Link>
-      </p>
       </div>
+      {/*
       <div style={{
         fontSize: (Math.max(window.innerWidth, window.innerHeight)*0.04) > 40 ? 28 : `2.75vmax`,
         marginTop: `0.5rem`,
         marginBottom: `0.5rem`
       }}>
+      */}
+      <div className={styles.margins}>
         <Link
           to="/blogs"
-          style={{
-            color: `white`,
-            float: `right`,
-            paddingRight: `1rem`,
-            textDecoration: `none`
-          }}
+          className={styles.links}
         >
           Blogs
         </Link>
         <Link
           to="/skills"
-          style={{
-            color: `white`,
-            float: `right`,
-            paddingRight: `1rem`,
-            textDecoration: `none`,
-          }}
+          className={styles.links}
         >
           Skills
         </Link>
         <Link
-        to="/projects"
-        style={{
-          color: `white`,
-          float: `right`,
-          paddingRight: `1rem`,
-          textDecoration: `none`,
-        }}
+          to="/projects"
+          className={styles.links}
         >
           Projects
         </Link>
         <Link
-        to="/about"
-        style={{
-          color: `white`,
-          float: `right`,
-          paddingRight: `1rem`,
-          textDecoration: `none`,
-        }}
+          to="/about"
+          className={styles.links}
         >
           About
         </Link>

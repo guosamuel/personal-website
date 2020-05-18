@@ -53,25 +53,41 @@
   font-family: "Jura"
 }
 
-@media (min-width: 960px) {
-  .name {
-    font-size: 50px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem
-  }
+.margins {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem
+}
+
+.margins .name {
+  font-size: 50px;
+  color: white;
+  text-decoration: none
+}
+
+.margins .links {
+  font-size: 28px;
+  color: white;
+  float: right;
+  padding-right: 1rem;
+  text-decoration: none
 }
 
 @media (min-width: 450px) and (max-width: 959px) {
-  .name {
+  .margins .name {
     font-size: 40px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem
+  }
+
+  .margins .links {
+    font-size: 24px;
   }
 }
+
 @media (max-width: 459px) {
-  .name {
+  .margins .name {
     font-size: 30px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem
+  }
+
+  .margins .links {
+    font-size: 18px;
   }
 }
