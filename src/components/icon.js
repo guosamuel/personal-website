@@ -3,11 +3,11 @@ import Img from "gatsby-image"
 import styles from "./css-modules.module.css"
 
 function Icon({ fluidData, altData, link }){
-  const [ hideIcon, setHideIcon ] = useState(false)
-
-  const toggleHideIcon = () => {
-    setHideIcon(!hideIcon)
-  }
+  // const [ hideIcon, setHideIcon ] = useState(false)
+  //
+  // const toggleHideIcon = () => {
+  //   setHideIcon(!hideIcon)
+  // }
 
   // <p
   // style={{
@@ -21,14 +21,14 @@ function Icon({ fluidData, altData, link }){
 
   return (
     <div
-      onClick={toggleHideIcon}
+      // onClick={toggleHideIcon}
       className={styles.icon}
     >
       <Img
         fluid={fluidData}
         alt={altData}
       />
-      { hideIcon ?
+      {/* hideIcon ?
         <a
           href={link}
           target="_blank"
@@ -37,7 +37,16 @@ function Icon({ fluidData, altData, link }){
           {altData}
         </a> :
         null
-      }
+      */}
+      <div style={{ marginTop: '0.5rem', marginBottom: '0.5rem'}}>
+        <a
+          href={link}
+          target="_blank"
+          style={{ fontSize: '1.5rem', textDecoration: 'underline', color: 'black'}}
+        >
+          {altData}
+        </a>
+      </div>
     </div>
   )
 }

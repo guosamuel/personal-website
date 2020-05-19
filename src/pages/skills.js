@@ -28,8 +28,6 @@ const Skills = () => {
     }
   `)
 
-  console.log("THIS IS IN THE SKILLS FOLDER", websiteLinks)
-
   const icons = data.allFile.edges.map( (icon,index) => {
     let metaData = icon.node.childImageSharp.fluid
     let name = metaData.originalName
@@ -44,14 +42,6 @@ const Skills = () => {
   return (
     <Layout>
       <SEO title="Skills" />
-      <p
-        style={{
-          fontSize: '1.5rem',
-          textAlign: 'center'
-        }}
-      >
-        Not sure what the icons mean? Click on them for more information!
-      </p>
       <div className={styles.icon_container}>
         {icons}
       </div>
