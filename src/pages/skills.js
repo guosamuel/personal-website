@@ -3,8 +3,10 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./css-modules.module.css"
-import Icon from "../components/icon"
+import MobileScreenIcon from "../components/mobileScreenIcon"
+import DesktopScreenIcon from "../components/desktopScreenIcon"
 import { websiteLinks } from "../information/icon-links"
+import MediaQuery from 'react-responsive'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -32,16 +34,36 @@ const Skills = () => {
     let metaData = icon.node.childImageSharp.fluid
     let name = metaData.originalName
 
-    return (
-      <div key={icon.node.childImageSharp.id}>
-        <Icon fluidData={metaData} altData={name.substring(3, name.length-4)} link={websiteLinks[index]}/>
-      </div>
-    )
+    if (window.innerWidth >= 960) {
+      return (
+        <div key={icon.node.childImageSharp.id}>
+          <DesktopScreenIcon fluidData={metaData} altData={name.substring(3, name.length-4)} link={websiteLinks[index]}/>
+        </div>
+      )
+    } else {
+      return (
+        <div key={icon.node.childImageSharp.id}>
+          <MobileScreenIcon fluidData={metaData} altData={name.substring(3, name.length-4)} link={websiteLinks[index]}/>
+        </div>
+      )
+    }
   })
 
   return (
     <Layout>
       <SEO title="Skills" />
+      {/*
+      <MediaQuery minDeviceWidth={960}>
+        <div className={styles.icon_container}>
+          {icons}
+        </div>
+      </MediaQuery>
+      <MediaQuery maxDeviceWidth={959}>
+        <div className={styles.icon_container}>
+          {icons}
+        </div>
+      </MediaQuery>
+      */}
       <div className={styles.icon_container}>
         {icons}
       </div>

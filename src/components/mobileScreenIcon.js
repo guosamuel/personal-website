@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Img from "gatsby-image"
 import styles from "./css-modules.module.css"
 
-function Icon({ fluidData, altData, link }){
+function MobileScreenIcon({ fluidData, altData, link }){
   // const [ hideIcon, setHideIcon ] = useState(false)
   //
   // const toggleHideIcon = () => {
@@ -51,4 +51,4 @@ function Icon({ fluidData, altData, link }){
   )
 }
 
-export default Icon
+export default MobileScreenIcon

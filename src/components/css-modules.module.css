@@ -16,6 +16,8 @@
   text-align: center;
 }
 
+
+
 /* .iframeContainer{
   position: relative;
   width: 100%;
@@ -70,6 +72,12 @@
   float: right;
   padding-right: 1rem;
   text-decoration: none
+}
+
+@media (min-width: 960px) {
+  .icon .image:hover {
+    opacity: 0.2
+  }
 }
 
 @media (min-width: 450px) and (max-width: 959px) {
