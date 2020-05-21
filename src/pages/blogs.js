@@ -5,26 +5,35 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlogIndex from "../components/blogIndex"
+import Pagination from "react-js-pagination";
+import styles from './pagination-source-code.css'
+// require("bootstrap/less/bootstrap.less");
+
 
 function Blogs({ data }){
   // console.log("I AM IN THE BLOG PAGE", data)
   // const { edges } = data.allMarkdownRemark
-  const [page, setPage] = useState(0)
+  const [page, setPage] = useState(1)
+  /*obsolete
   // const [ leftHover, setLeftHover ] = useState(false)
   // const [ rightHover, setRightHover ] = useState(false)
-  const [hover, setHover] = useState(false)
-  const BLOGSPERPAGE = 5
-  const totalPages = Math.ceil(data.allMarkdownRemark.nodes.length / BLOGSPERPAGE)
-  const leftArrows = "<<"
-  const rightArrows = ">>"
+  */
+  // const [hover, setHover] = useState(false)
+  const BLOGS_PER_PAGE = 5
+  const TOTAL_COUNT = data.allMarkdownRemark.nodes.length
+  const totalPages = Math.ceil( TOTAL_COUNT / BLOGS_PER_PAGE)
+  // const leftArrows = "<<"
+  // const rightArrows = ">>"
 
-  const toggleHover = () => {
-    if (page === 0 || page === totalPages - 1) {
-      setHover(true)
-    } else {
-      setHover(!hover)
-    }
-  }
+  // const toggleHover = () => {
+  //   if (page === 0 || page === totalPages - 1) {
+  //     setHover(true)
+  //   } else {
+  //     setHover(!hover)
+  //   }
+  // }
+
+  /*obsolete
   // const toggleLeftHover = () => {
   //   setLeftHover(!leftHover)
   // }
@@ -32,12 +41,18 @@ function Blogs({ data }){
   // const toggleRightHover = () => {
   //   setRightHover(!rightHover)
   // }
+  */
 
-  const allBlogIndexes = data.allMarkdownRemark.nodes.slice(page*BLOGSPERPAGE, (page+1)*BLOGSPERPAGE).map( blog => {
+  const handlePageChange = (e) => {
+    console.log(e)
+    setPage(e)
+  }
+
+  const allBlogIndexes = data.allMarkdownRemark.nodes.slice((page-1)*BLOGS_PER_PAGE, page*BLOGS_PER_PAGE).map( blog => {
     const { path, date, title } = blog.frontmatter
     const { id, excerpt } = blog
     return (
-      <div key={id}>
+      <div key={id} style={{ fontFamily: "sans-serif" }}>
         <BlogIndex path={path} date={date} title={title} excerpt={excerpt}/>
       </div>
     )
@@ -46,8 +61,8 @@ function Blogs({ data }){
   return (
   <Layout>
     <SEO title="Blogs" />
-    <h1>Blogs</h1>
-    <div>{allBlogIndexes}</div>
+    <div style={{ marginTop: '1.5rem' }}>{allBlogIndexes}</div>
+    {/*
     <div>
       { page === 0 ?
         null :
@@ -72,6 +87,17 @@ function Blogs({ data }){
           {rightArrows}
         </span>
       }
+    </div>
+    */}
+    <div style={{ display: 'flex', justifyContent: 'center'}} className={styles}>
+      <Pagination
+        hideDisabled
+        activePage={page}
+        itemsCountPerPage={BLOGS_PER_PAGE}
+        totalItemsCount={TOTAL_COUNT}
+        onChange={handlePageChange}
+        pageRangeDisplayed={5}
+      />
     </div>
   </Layout>
   )
