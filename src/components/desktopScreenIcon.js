@@ -28,24 +28,26 @@ function DesktopScreenIcon({ fluidData, altData, link }){
     <div
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
-      className={styles.icon}
+      className={styles.iconLinkContainer}
     >
       <Img
         fluid={fluidData}
         alt={altData}
         className={styles.image}
       />
-
+      <div className={styles.skillLinks}>
         <a
           href={link}
           target="_blank"
-          style={{ fontSize: '1.25rem', backgroundColor: "white" }}
         >
           {altData}
         </a>
+      </div>
 
     </div>
+
   )
+
 }
 
 export default DesktopScreenIcon
