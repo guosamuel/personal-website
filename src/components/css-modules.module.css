@@ -13,31 +13,12 @@
 .iconLinkContainer {
   margin: 2rem 0.5rem 2rem 0.5rem;
   /* text-align: center; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* position: relative */
 }
 
-.iconLinkContainer .skillLinks {
-  font-size: 1.25rem;
-  background-color: white;
-  border: black;
-  border-style: double;
-  border-width: thin;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  /* margin: auto; */
-  text-align: center
-}
 
 a {
   text-decoration: none;
-}
-
-a:link {
-  color: blue;
 }
 
 .iconLinkContainer .image {
@@ -102,6 +83,12 @@ a:link {
 }
 
 @media (min-width: 960px) {
+  .iconLinkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .iconLinkContainer .image:hover + .skillLinks {
     opacity: 1
   }
@@ -115,6 +102,33 @@ a:link {
     z-index: 0
   }
 
+  .iconLinkContainer .skillLinks {
+    font-size: 1.5rem;
+    background-color: white;
+    border: black;
+    border-style: double;
+    border-width: thin;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    /* margin: auto; */
+    text-align: center;
+    font-family: Jura
+  }
+}
+
+@media (max-width: 959px) {
+  .iconLinkContainer {
+    text-align: center
+  }
+
+  .iconLinkContainer .skillLinks {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-family: Jura
+  }
 }
 
 @media (min-width: 450px) and (max-width: 959px) {

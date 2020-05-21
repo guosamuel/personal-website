@@ -22,11 +22,12 @@ function MobileScreenIcon({ fluidData, altData, link }){
   return (
     <div
       // onClick={toggleHideIcon}
-      className={styles.icon}
+      className={styles.iconLinkContainer}
     >
       <Img
         fluid={fluidData}
         alt={altData}
+        className={styles.image}
       />
       {/* hideIcon ?
         <a
@@ -38,11 +39,10 @@ function MobileScreenIcon({ fluidData, altData, link }){
         </a> :
         null
       */}
-      <div style={{ marginTop: '0.5rem', marginBottom: '0.5rem'}}>
+      <div className={styles.skillLinks}>
         <a
           href={link}
           target="_blank"
-          style={{ fontSize: '1.5rem', textDecoration: 'underline', color: 'black'}}
         >
           {altData}
         </a>
