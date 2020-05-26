@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./css-modules.module.css"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -42,11 +43,47 @@ const IndexPage = () => {
       <div className={styles.description}>
         <h2 className={styles.username}>Hi, Samuel here!</h2>
         <p className={styles.excerpt}>
-          I am a full-stack developer, living in New York City, who is constantly working on side projects or learning something new.
+          You came here looking for something. Let’s help you find it.
         </p>
         <br />
-        <p className={styles.excerpt}>
-          I believe in the mentality of being a student for life. I'm always on the lookout of constantly learning new skills or concepts, applying those skills or concepts to wherever is applicable, and adapting to whatever scenario that life may throw at me.
+        <p>
+          Is it my work?
+          <Link
+            to="/projects"
+            className={styles.indexLinks}
+          >
+            Click here!
+          </Link>
+        </p>
+        <p>
+          Or is it my skills?
+          <Link
+            to="/skills"
+            className={styles.indexLinks}
+          >
+            Check them out!
+          </Link>
+        </p>
+        <p>
+          Perhaps you’re curious about the insight I gathered?
+          <Link
+            to="/blogs"
+            className={styles.indexLinks}
+          >
+            Here are some of my blogs!
+          </Link>
+        </p>
+        <p>
+          Maybe more details about me?
+          <Link
+            to="/about"
+            className={styles.indexLinks}
+          >
+            Right this way!
+          </Link>
+        </p>
+        <p>
+          Can’t find what you’re looking for? Let’s get in touch so I can help!
         </p>
       </div>
     </div>
