@@ -44,9 +44,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* justify-content: space-between; */
   /* display: inline-block; */
   align-items: center;
-  margin: 2rem
+  /* margin: 2rem */
   /* top, right, bottom, left */
   /* margin: 0 auto 12px auto; */
 }
