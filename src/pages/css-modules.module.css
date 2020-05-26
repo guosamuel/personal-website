@@ -3,12 +3,16 @@
   flex-wrap: wrap;
   /* display: inline-block; */
   align-items: center;
+  justify-content: center;
   /* top, right, bottom, left */
   margin: 2rem auto 2rem auto;
+  font-family: "Jura"
 }
 .picture {
   /* max-width: 400px */
-  width: 22rem;
+  width: 400px;
+  margin-right: 1rem;
+  margin-bottom: 1rem
 }
 .user:last-child {
   margin-bottom: 0;
@@ -22,12 +26,12 @@
 .description {
   /* display: flex; */
   flex: 1;
-  margin-left: 18px;
-  padding: 12px;
+  /* margin-left: 18px; */
+  /* padding: 12px; */
 }
 .username {
-  margin: 0 0 12px 0;
-  padding: 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .excerpt {
   margin: 0;

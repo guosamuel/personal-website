@@ -41,7 +41,7 @@ const IndexPage = () => {
         alt="Portfolio picture on the index page"
       />
       <div className={styles.description}>
-        <h2 className={styles.username}>Hi, Samuel here!</h2>
+        <p className={styles.username}>Hi, Samuel here!</p>
         <p className={styles.excerpt}>
           You came here looking for something. Let’s help you find it.
         </p>
