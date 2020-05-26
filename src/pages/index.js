@@ -13,7 +13,7 @@ const imageURL = 'https://media-exp1.licdn.com/dms/image/C5603AQH9KmTFZP-zQA/pro
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: {childImageSharp: {fluid: {originalName: {eq: "portfolio_picture.jpg"}}}}) {
+      allFile(filter: {childImageSharp: {fluid: {originalName: {eq: "portfolio_picture_shorter.jpg"}}}}) {
         edges {
           node {
             childImageSharp {
