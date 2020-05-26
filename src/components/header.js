@@ -45,6 +45,12 @@ const Header = ({ siteTitle }) => (
       */}
       <div className={styles.margins}>
         <Link
+          to="/about"
+          className={styles.links}
+        >
+          About
+        </Link>
+        <Link
           to="/blogs"
           className={styles.links}
         >
@@ -62,13 +68,6 @@ const Header = ({ siteTitle }) => (
         >
           Projects
         </Link>
-        <Link
-          to="/about"
-          className={styles.links}
-        >
-          About
-        </Link>
-
       </div>
     </div>
   </header>
