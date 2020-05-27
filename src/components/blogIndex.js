@@ -9,7 +9,11 @@ const BlogIndex = ({ path, date, title, excerpt }) => {
     <small>Published: {date}</small>
     <br />
     <br />
-    <p>{excerpt}</p>
+    <p>
+      {excerpt}
+      <a href={path} target="_blank" style={{ color: 'blue', textDecoration: "none", marginLeft: "3px" }}>Read More...</a>
+    </p>
+    {/*
     <div style={{ display: 'flex', justifyContent: 'flex-end'}}>
       <button
         onClick={() => {window.open(path)}}
@@ -22,6 +26,7 @@ const BlogIndex = ({ path, date, title, excerpt }) => {
         Read More
       </button>
     </div>
+    */}
     <br />
     <hr />
     </>
