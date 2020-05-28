@@ -26,19 +26,21 @@ function Projects({data}) {
   return (
     <Layout>
       <SEO title="Projects" />
+      {/*
       <h1>Projects</h1>
       <h2>
         Note: Currently all of these projects are desktop friendly.
         Mobile friendly coming soon!
       </h2>
-      <div>{allProjectIndexes}</div>
+      */}
+      <div style={{ marginTop: '1.5rem', fontFamily: "Jura" }}>{allProjectIndexes}</div>
     </Layout>
   )
 }
 
 export const projectIndexQuery = graphql`
   query projectIndexQuery {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/projects/"}}) {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/projects/"}}, sort: {fields: fileAbsolutePath, order: ASC}) {
       nodes {
         id
         frontmatter {
