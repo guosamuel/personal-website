@@ -4,6 +4,7 @@ link: "https://stock-portfolio-sg.herokuapp.com/"
 demo: null
 embed: null
 title: "SG Stock Portfolio"
+tech: [React, Redux, React Router, JWT, Ruby on Rails, B-Crypt, Ruby, SQL, PostgreSQL, HTML, CSS]
 ---
 
 Not sure how to get into stocks? Want to experiment with stocks using fake money?

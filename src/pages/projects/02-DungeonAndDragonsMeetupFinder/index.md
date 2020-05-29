@@ -4,6 +4,7 @@ link: "https://safe-hollows-92302.herokuapp.com/login"
 demo: "https://www.youtube.com/watch?v=ILOjklEh6zE&feature=youtu.be"
 embed: "https://www.youtube.com/embed/ILOjklEh6zE"
 title: "Dungeon and Dragons Meetup Finder"
+tech: [Ruby on Rails, B-Crypt, Ruby, SQL, PostgreSQL, Bootstrap, HTML, CSS]
 ---
 
 Can’t seem to find a consistent group of people for a Dungeons and Dragons campaign? Looking to try Dungeons and Dragons for the first time but don’t know where to start? Or perhaps you already have an awesome campaign set up but need to find players?

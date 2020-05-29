@@ -4,6 +4,7 @@ link: "https://progressingforward.netlify.app/"
 demo: "https://www.youtube.com/watch?v=qgSnM6FDT28&feature=youtu.be"
 embed: "https://www.youtube.com/embed/qgSnM6FDT28"
 title: "Progressing Forward"
+tech: [React, Redux, Semantic UI, Semantic UI React, JWT, Javascript, Ruby on Rails, B-Crypt, Ruby, SQL, PostgreSQL, HTML, CSS]
 ---
 
 Are you a project lead or supervisor that’s involved in a massive project or part of many projects? Can’t keep track of the collaborators’ tasks since they’re outside of your team? Need to wait for a task to be completed before starting yours?

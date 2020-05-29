@@ -2,10 +2,11 @@ import React from "react"
 import DemoVideo from './demoVideo'
 import styles from './css-modules.module.css'
 
-const ProjectIndex = ({ demo, link, github, title, excerpt, embed }) => {
-  console.log(excerpt)
+const ProjectIndex = ({ demo, link, github, title, excerpt, embed, tech }) => {
+  console.log("TECH", tech)
   const formattedExcerpt = excerpt.split(`\n\n`).map(paragraph => `<p>${paragraph.replace(/\n/g, `<br>`)}</p>`).join(``)
   // console.log(formattedExcerpt)
+  const formattedTech = tech.map(tech => <span className={styles.roundedRectangle}>{tech}</span>)
   return (
     <>
       <h3>
@@ -32,11 +33,16 @@ const ProjectIndex = ({ demo, link, github, title, excerpt, embed }) => {
           <br />
         </div> : null }
         */}
+        <div style={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', fontSize: '22px'}}>Made with:</div>
+        <div className={styles.techContainer}>
+          {formattedTech}
+        </div>
         <div style={{
           display: 'flex',
           justifyContent: 'center',
           flexDirection: 'column',
-          alignItems: 'center'
+          alignItems: 'center',
+          marginTop: '0.5rem'
         }}>
           { link ? <a href={link} target="_blank">Website</a>: null }
           { github ? <a href={github} target="_blank">Source Code</a>: null}

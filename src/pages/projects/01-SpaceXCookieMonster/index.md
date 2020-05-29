@@ -4,6 +4,7 @@ link: "https://jyan95.github.io/spaceXcookiemonster/?fbclid=IwAR3gsEjyIwCfBVofLh
 demo: "https://www.youtube.com/watch?v=hx3GyMxtREk&feature=youtu.be"
 embed: "https://www.youtube.com/embed/hx3GyMxtREk"
 title: "Space X Cookie Monster"
+tech: [Javascript, Canvas, Ruby on Rails, Ruby, SQL, PostgreSQL, HTML, CSS, DOM Manipulation]
 ---
 
 Have 5-10 minutes to spare before your next appointment? Miss the early 2000s flash games? Want your name immortalized on the top of a leaderboard?

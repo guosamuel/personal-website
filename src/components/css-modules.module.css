@@ -130,8 +130,27 @@
 
 .titleLink {
   color: blue;
-  font-weight: bold; 
+  font-weight: bold;
   text-decoration: none
+}
+
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.roundedRectangle{
+	/* width: 200px; */
+	/* height: 100px; */
+  padding: 0.25rem;
+	/* background: #222; */
+  background: grey;
+	border-radius: 0.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 0.25rem
 }
 
 @media (min-width: 960px) {

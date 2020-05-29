@@ -8,7 +8,7 @@ import ProjectIndex from "../components/projectIndex"
 function Projects({data}) {
   // console.log("I AM IN THE PROJECT PAGE", data)
   const allProjectIndexes = data.allMarkdownRemark.nodes.map( project => {
-    const { link, demo, title, github, embed } = project.frontmatter
+    const { link, demo, title, github, embed, tech } = project.frontmatter
     const { id, excerpt } = project
     return (
       <div key={id}>
@@ -18,7 +18,8 @@ function Projects({data}) {
           title={title}
           excerpt={excerpt}
           github={github}
-          embed={embed}/>
+          embed={embed}
+          tech={tech}/>
       </div>
     )
   })
@@ -49,6 +50,7 @@ export const projectIndexQuery = graphql`
           github
           link
           embed
+          tech
         }
         excerpt(pruneLength: 1000)
       }
