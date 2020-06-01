@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 2rem auto 2rem auto;
+  margin: 2rem auto auto auto;
   font-family: Jura
 }
 
@@ -32,27 +32,6 @@
 }
 /***********************************************/
 
-.user:last-child {
-  margin-bottom: 0;
-}
-.avatar {
-  flex: 0 0 96px;
-  width: 96px;
-  height: 96px;
-  margin: 0;
-}
-
-
-
-/* .question {
-  float: left;
-  padding-right: 1rem
-}
-.answer {
-  float:right;
-  padding-left: 1rem
-} */
-
 /**********SKILL PAGE**********/
 .skillIconContainer {
   display: flex;
@@ -62,11 +41,6 @@
 }
 /******************************/
 
-/* .icon {
-  width: 200px;
-  margin: 0.5rem
-} */
-
 /*********ABOUT PAGE*********/
 .dialogueContainer {
   display: flex;
@@ -74,12 +48,6 @@
   padding: 10px;
 }
 /****************************/
-
-.indexMargins {
-  margin: 2rem
-}
-
-
 
 /***********PROJECT PAGE***********/
 .projectContainer {

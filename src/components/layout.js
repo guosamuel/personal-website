@@ -24,16 +24,11 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  // style={{
-  //   margin: `0 auto`,
-  //   maxWidth: window.innerWidth < 2000 ? 960 : 0.8*window.innerWidth,
-  //   padding: `0 1.0875rem 1.45rem`,
-  //   paddingBottom: '13rem'
-  // }}
+
   return (
     <div style={{ position: 'relative', minHeight: '100vh'}}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className={styles.layout}>
+      <div className={styles.center}>
         <main>{children}</main>
       </div>
       <Footer />
