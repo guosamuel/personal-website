@@ -44,7 +44,7 @@ const IndexPage = () => {
             Is it my work?
             <Link
               to="/projects"
-              className={styles.pageLinks}
+              className={styles.link}
             >
               Click here!
             </Link>
@@ -53,7 +53,7 @@ const IndexPage = () => {
             Or is it my skills?
             <Link
               to="/skills"
-              className={styles.pageLinks}
+              className={styles.link}
             >
               Check them out!
             </Link>
@@ -62,7 +62,7 @@ const IndexPage = () => {
             Perhaps you’re curious about the insight I gathered?
             <Link
               to="/blogs"
-              className={styles.pageLinks}
+              className={styles.link}
             >
               Here are some of my blogs!
             </Link>
@@ -71,7 +71,7 @@ const IndexPage = () => {
             Maybe more details about me?
             <Link
               to="/about"
-              className={styles.pageLinks}
+              className={styles.link}
             >
               Right this way!
             </Link>
