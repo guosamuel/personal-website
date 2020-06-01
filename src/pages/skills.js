@@ -6,7 +6,7 @@ import styles from "./css-modules.module.css"
 import MobileScreenIcon from "../components/mobileScreenIcon"
 import DesktopScreenIcon from "../components/desktopScreenIcon"
 import { websiteLinks } from "../information/icon-links"
-import MediaQuery from 'react-responsive'
+// import MediaQuery from 'react-responsive'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"

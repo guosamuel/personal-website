@@ -1,10 +1,10 @@
 import React from 'react'
-import './text-bubble.css'
+import styles from './css-modules.module.css'
 
 const Question = ({ question }) => {
   return (
-    <div className="yours messages">
-      <div className="message last">
+    <div className={`${styles.yours} ${styles.messages}`}>
+      <div className={`${styles.message} ${styles.last}`}>
         <p>{question}</p>
       </div>
     </div>

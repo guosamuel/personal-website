@@ -25,7 +25,7 @@ const About = () => {
   return (
     <Layout>
       <SEO title="About" />
-      <div className={styles.dialogue_container}>{dialogue}</div>
+      <div className={styles.dialogueContainer}>{dialogue}</div>
     </Layout>
   )
 }
