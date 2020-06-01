@@ -44,17 +44,16 @@
   float:right;
   padding-left: 1rem
 } */
-.icon_container {
+
+/**********SKILL PAGE**********/
+.skillIconContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* justify-content: space-between; */
-  /* display: inline-block; */
   align-items: center;
-  /* margin: 2rem */
-  /* top, right, bottom, left */
-  /* margin: 0 auto 12px auto; */
 }
+/******************************/
+
 /* .icon {
   width: 200px;
   margin: 0.5rem
