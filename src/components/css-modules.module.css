@@ -9,9 +9,9 @@
 }
 /************************************/
 
+/***************HEADER***************/
 .header {
   background: black;
-  /* margin-bottom: 1.45rem */
 }
 
 .headerContainer {
@@ -42,6 +42,7 @@
   padding-right: 1rem;
   text-decoration: none
 }
+/************************************/
 
 .footer {
   background: black;
@@ -293,6 +294,7 @@
 }
 
 @media (min-width: 450px) and (max-width: 959px) {
+  /***************HEADER***************/
   .margins .name {
     font-size: 40px;
   }
@@ -300,9 +302,11 @@
   .margins .links {
     font-size: 24px;
   }
+  /************************************/
 }
 
 @media (max-width: 459px) {
+  /***************HEADER***************/
   .margins .name {
     font-size: 30px;
   }
@@ -310,7 +314,7 @@
   .margins .links {
     font-size: 18px;
   }
-
+  /************************************/
 }
 
 @media (max-width: 370px) {
