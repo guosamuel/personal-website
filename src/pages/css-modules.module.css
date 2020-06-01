@@ -80,3 +80,48 @@
 .indexLinks {
   margin-left: 3px
 }
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.5rem auto 0.5rem auto;
+  font-family: "Jura"
+}
+
+.errorNumberContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11rem
+}
+
+.errorImage {
+  height: 7.5rem;
+  width: 7.5rem;
+  margin-top: 0.5rem
+}
+
+.errorText {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center
+}
+
+.cakeImage {
+  height: 15rem;
+  width: 15rem
+}
+
+@media (max-width: 370px) {
+  .errorNumberContainer {
+    font-size: 9rem
+  }
+
+  .errorImage {
+    height: 6rem;
+    width: 6rem
+  }
+}
