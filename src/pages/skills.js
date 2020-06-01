@@ -34,19 +34,24 @@ const Skills = () => {
     let metaData = icon.node.childImageSharp.fluid
     let name = metaData.originalName
 
-    if (window.innerWidth >= 960) {
-      return (
-        <div key={icon.node.childImageSharp.id}>
-          <DesktopScreenIcon fluidData={metaData} altData={name.substring(3, name.length-4)} link={websiteLinks[index]}/>
-        </div>
-      )
-    } else {
-      return (
-        <div key={icon.node.childImageSharp.id}>
-          <MobileScreenIcon fluidData={metaData} altData={name.substring(3, name.length-4)} link={websiteLinks[index]}/>
-        </div>
-      )
-    }
+    return (
+      <div key={icon.node.childImageSharp.id}>
+        <DesktopScreenIcon fluidData={metaData} altData={name.substring(3, name.length-4)} link={websiteLinks[index]}/>
+      </div>
+    )
+    // if (window.innerWidth >= 960) {
+    //   return (
+    //     <div key={icon.node.childImageSharp.id}>
+    //       <DesktopScreenIcon fluidData={metaData} altData={name.substring(3, name.length-4)} link={websiteLinks[index]}/>
+    //     </div>
+    //   )
+    // } else {
+    //   return (
+    //     <div key={icon.node.childImageSharp.id}>
+    //       <MobileScreenIcon fluidData={metaData} altData={name.substring(3, name.length-4)} link={websiteLinks[index]}/>
+    //     </div>
+    //   )
+    // }
   })
 
   return (

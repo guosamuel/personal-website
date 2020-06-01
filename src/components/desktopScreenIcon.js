@@ -4,15 +4,15 @@ import styles from "./css-modules.module.css"
 
 function DesktopScreenIcon({ fluidData, altData, link }){
   // const [ hideIcon, setHideIcon ] = useState(false)
-  const [ hover, setHover ] = useState(false)
+  // const [ hover, setHover ] = useState(false)
 
   // const toggleHideIcon = () => {
   //   setHideIcon(!hideIcon)
   // }
 
-  const toggleHover = () => {
-    setHover(!hover)
-  }
+  // const toggleHover = () => {
+  //   setHover(!hover)
+  // }
 
   // <p
   // style={{
@@ -24,10 +24,12 @@ function DesktopScreenIcon({ fluidData, altData, link }){
   // meep
   // </p> :
 
+  // onMouseEnter={toggleHover}
+  // onMouseLeave={toggleHover}
+
   return (
     <div
-      onMouseEnter={toggleHover}
-      onMouseLeave={toggleHover}
+
       className={styles.iconLinkContainer}
     >
       <Img
