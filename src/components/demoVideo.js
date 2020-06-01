@@ -18,5 +18,3 @@ const DemoVideo = ({ embed }) => {
 }
 
 export default DemoVideo
-// width="560"
-// height="315"

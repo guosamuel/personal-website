@@ -3,54 +3,28 @@ import DemoVideo from './demoVideo'
 import styles from './css-modules.module.css'
 
 const ProjectIndex = ({ demo, link, github, title, excerpt, embed, tech }) => {
-  console.log("TECH", tech)
   const formattedExcerpt = excerpt.split(`\n\n`).map(paragraph => `<p>${paragraph.replace(/\n/g, `<br>`)}</p>`).join(``)
-  // console.log(formattedExcerpt)
   const formattedTech = tech.map(tech => <span className={styles.roundedRectangle}>{tech}</span>)
   return (
-    <>
+    <div>
       <h3>
-        {link ? <a href={link} target="_blank" className={styles.titleLink}>{title}</a> : title}
+        {link ? <a href={link} target="_blank" className={styles.title}>{title}</a> : title}
       </h3>
       <div dangerouslySetInnerHTML={{ __html: formattedExcerpt }} />
-      {/*<p>{excerpt}</p>*/}
       { embed ? <DemoVideo embed={embed} /> : null}
       <br />
-      {/*
-      { link ?
-      <div>
-        <a href={link} target="_blank">Link</a>
-        <br />
-      </div> : null }
-      { demo ?
-        <div>
-          <a href={demo} target="_blank">YouTube Demo</a>
-          <br />
-        </div> : null }
-      { github ?
-        <div>
-          <a href={github} target="_blank">Source Code</a>
-          <br />
-        </div> : null }
-        */}
-        <div style={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', fontSize: '22px'}}>Made with:</div>
+        <div className={styles.madeWith}>Made with:</div>
         <div className={styles.techContainer}>
           {formattedTech}
         </div>
-        <div style={{
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          alignItems: 'center',
-          marginTop: '0.5rem'
-        }}>
+        <div className={styles.projectLinksContainer}>
           { link ? <a href={link} target="_blank">Website</a>: null }
           { github ? <a href={github} target="_blank">Source Code</a>: null}
           { demo ? <a href={demo} target="_blank">Youtube</a> : null}
         </div>
         <br />
       <hr />
-    </>
+    </div>
   )
 
 }

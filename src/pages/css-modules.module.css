@@ -58,11 +58,14 @@
   width: 200px;
   margin: 0.5rem
 } */
+
+/*********ABOUT PAGE*********/
 .dialogueContainer {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
+/****************************/
 
 .indexMargins {
   margin: 2rem
@@ -71,6 +74,14 @@
 .indexLinks {
   margin-left: 3px
 }
+
+/***********PROJECT PAGE***********/
+.projectContainer {
+  margin-top: 1.5rem;
+  font-family: Jura
+}
+/**********************************/
+
 
 /***********404 PAGE***********/
 .errorContainer {
