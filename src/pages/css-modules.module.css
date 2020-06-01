@@ -1,19 +1,37 @@
+/*******************HOME PAGE*******************/
 .user {
   display: flex;
   flex-wrap: wrap;
-  /* display: inline-block; */
   align-items: center;
   justify-content: center;
-  /* top, right, bottom, left */
   margin: 2rem auto 2rem auto;
-  font-family: "Jura"
+  font-family: Jura
 }
+
 .picture {
-  /* max-width: 400px */
   width: 400px;
   margin-right: 1rem;
   margin-bottom: 1rem
 }
+
+.description {
+  flex: 1;
+}
+
+.username {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.excerpt {
+  margin: 0;
+}
+
+.pageLinks {
+  margin-left: 3px
+}
+/***********************************************/
+
 .user:last-child {
   margin-bottom: 0;
 }
@@ -23,19 +41,9 @@
   height: 96px;
   margin: 0;
 }
-.description {
-  /* display: flex; */
-  flex: 1;
-  /* margin-left: 18px; */
-  /* padding: 12px; */
-}
-.username {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.excerpt {
-  margin: 0;
-}
+
+
+
 /* .question {
   float: left;
   padding-right: 1rem
@@ -71,9 +79,7 @@
   margin: 2rem
 }
 
-.indexLinks {
-  margin-left: 3px
-}
+
 
 /***********PROJECT PAGE***********/
 .projectContainer {
