@@ -73,6 +73,7 @@
   margin-left: 3px
 }
 
+/***********404 PAGE***********/
 .errorContainer {
   display: flex;
   flex-direction: column;
@@ -106,6 +107,22 @@
   height: 15rem;
   width: 15rem
 }
+/******************************/
+
+/**********BLOG PAGE**********/
+.blogFont {
+  font-family: sans-serif;
+}
+
+.blogContainer {
+  margin-top: 1.5rem
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center
+}
+/*****************************/
 
 @media (max-width: 370px) {
   .errorNumberContainer {

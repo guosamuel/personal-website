@@ -1,50 +1,21 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlogIndex from "../components/blogIndex"
 import Pagination from "react-js-pagination";
-import styles from './pagination-source-code.css'
-// require("bootstrap/less/bootstrap.less");
+import styles from './css-modules.module.css'
+import paginationStyle from "./pagination-source-code.css"
 
 
 function Blogs({ data }){
-  // console.log("I AM IN THE BLOG PAGE", data)
-  // const { edges } = data.allMarkdownRemark
   const [page, setPage] = useState(1)
-  /*obsolete
-  // const [ leftHover, setLeftHover ] = useState(false)
-  // const [ rightHover, setRightHover ] = useState(false)
-  */
-  // const [hover, setHover] = useState(false)
   const BLOGS_PER_PAGE = 5
   const TOTAL_COUNT = data.allMarkdownRemark.nodes.length
   const totalPages = Math.ceil( TOTAL_COUNT / BLOGS_PER_PAGE)
-  // const leftArrows = "<<"
-  // const rightArrows = ">>"
-
-  // const toggleHover = () => {
-  //   if (page === 0 || page === totalPages - 1) {
-  //     setHover(true)
-  //   } else {
-  //     setHover(!hover)
-  //   }
-  // }
-
-  /*obsolete
-  // const toggleLeftHover = () => {
-  //   setLeftHover(!leftHover)
-  // }
-  //
-  // const toggleRightHover = () => {
-  //   setRightHover(!rightHover)
-  // }
-  */
 
   const handlePageChange = (e) => {
-    console.log(e)
     setPage(e)
   }
 
@@ -52,7 +23,7 @@ function Blogs({ data }){
     const { path, date, title } = blog.frontmatter
     const { id, excerpt } = blog
     return (
-      <div key={id} style={{ fontFamily: "sans-serif" }}>
+      <div key={id} className={styles.blogFont}>
         <BlogIndex path={path} date={date} title={title} excerpt={excerpt}/>
       </div>
     )
@@ -61,35 +32,8 @@ function Blogs({ data }){
   return (
   <Layout>
     <SEO title="Blogs" />
-    <div style={{ marginTop: '1.5rem' }}>{allBlogIndexes}</div>
-    {/*
-    <div>
-      { page === 0 ?
-        null :
-        <span
-          onClick={() => setPage(page-1)}
-          onMouseEnter={toggleHover}
-          onMouseLeave={toggleHover}
-          style={{cursor: hover ? `pointer` : null, marginRight: '1rem'}}
-        >
-          {leftArrows}
-        </span>
-      }
-      <span>Page {page+1} of {totalPages}</span>
-      { page === totalPages - 1 ?
-        null :
-        <span
-          onClick={() => setPage(page+1)}
-          onMouseEnter={toggleHover}
-          onMouseLeave={toggleHover}
-          style={{cursor: hover ? `pointer` : null, marginLeft: '1rem'}}
-        >
-          {rightArrows}
-        </span>
-      }
-    </div>
-    */}
-    <div style={{ display: 'flex', justifyContent: 'center'}} className={styles}>
+    <div className={styles.blogContainer}>{allBlogIndexes}</div>
+    <div className={styles.paginationContainer} >
       <Pagination
         hideDisabled
         activePage={page}
@@ -102,24 +46,6 @@ function Blogs({ data }){
   </Layout>
   )
 }
-
-// export const blogIndexQuery = graphql`
-//   query blogIndexQuery {
-//     allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
-//       edges {
-//         node {
-//           id
-//           frontmatter {
-//             date(formatString: "MM-DD-YYYY")
-//             path
-//             title
-//           }
-//         excerpt(pruneLength: 1000)
-//         }
-//       }
-//     }
-//   }
-// `
 
 export const blogIndexQuery = graphql`
   query blogIndexQuery {
