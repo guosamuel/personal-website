@@ -44,6 +44,7 @@
 }
 /************************************/
 
+/***************FOOTER***************/
 .footer {
   background: black;
   position: absolute;
@@ -55,7 +56,7 @@
 .footerContainer {
   max-Width: 960px;
   margin: 0 auto;
-  font-family: "Jura";
+  font-family: Jura;
   color: white;
   padding: 1.45rem 1.0875rem;
 }
@@ -66,7 +67,6 @@
   align-items: center;
   justify-content: flex-start;
   margin: 0.5rem auto 0.5rem auto;
-  font-family: "Jura"
 }
 
 .footerIntro {
@@ -74,12 +74,11 @@
   margin: 0
 }
 
-.emailLink {
+.linkFormat {
   margin-left: 10px
 }
 
 .socialMediaLink {
-  margin-left: 10px;
   color: white
 }
 
@@ -87,6 +86,7 @@
   height: 24px;
   width: 24px
 }
+/************************************/
 
 .title {
   color: blue;
@@ -318,6 +318,7 @@
 }
 
 @media (max-width: 370px) {
+  /***************FOOTER***************/
   .footerIntro {
     font-size: 18px
   }
@@ -327,11 +328,8 @@
     width: 18px
   }
 
-  .emailLink {
+  .linkFormat {
     font-size: 12px
   }
-
-  .socialMediaLink {
-    font-size: 12px
-  }
+  /************************************/
 }

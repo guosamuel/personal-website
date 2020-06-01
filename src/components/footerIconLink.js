@@ -7,11 +7,11 @@ const FooterIconLink = ({ fluidData, link}) => {
     <div className={styles.footerContent}>
       <Img fluid={fluidData} className={styles.footerIcon} />
       { link === "guosamuel1114@gmail.com" ?
-      <div className={styles.emailLink}>{link}</div> :
+      <div className={styles.linkFormat}>{link}</div> :
       <a
         href={link}
         target="_blank"
-        className={styles.socialMediaLink}
+        className={`${styles.linkFormat} ${styles.socialMediaLink}`}
       >{link}
       </a>
     }

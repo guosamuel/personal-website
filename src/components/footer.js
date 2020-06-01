@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './css-modules.module.css'
-import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from "gatsby"
-import { links } from '../information/footer-links'
+
 import FooterIconLink from './footerIconLink'
+import { links } from '../information/footer-links'
+import styles from './css-modules.module.css'
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -22,7 +22,7 @@ const Footer = () => {
       }
     }
   `)
-  // console.log(data)
+
   const content = data.allFile.edges.map( (icon,index) => {
     let metaData = icon.node.childImageSharp.fluid
 
