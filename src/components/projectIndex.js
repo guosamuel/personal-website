@@ -8,7 +8,7 @@ const ProjectIndex = ({ demo, link, github, title, excerpt, embed, tech }) => {
   return (
     <div>
       <h3>
-        {link ? <a href={link} target="_blank" className={styles.title}>{title}</a> : title}
+        {link ? <a href={link} target="_blank" className={styles.title} rel="noreferrer">{title}</a> : title}
       </h3>
       <div dangerouslySetInnerHTML={{ __html: formattedExcerpt }} />
       { embed ? <DemoVideo embed={embed} /> : null}
@@ -18,9 +18,9 @@ const ProjectIndex = ({ demo, link, github, title, excerpt, embed, tech }) => {
           {formattedTech}
         </div>
         <div className={styles.projectLinksContainer}>
-          { link ? <a href={link} target="_blank">Website</a>: null }
-          { github ? <a href={github} target="_blank">Source Code</a>: null}
-          { demo ? <a href={demo} target="_blank">Youtube</a> : null}
+          { link ? <a href={link} target="_blank" rel="noreferrer">Website</a>: null }
+          { github ? <a href={github} target="_blank" rel="noreferrer">Source Code</a>: null}
+          { demo ? <a href={demo} target="_blank" rel="noreferrer">Youtube</a> : null}
         </div>
         <br />
       <hr />

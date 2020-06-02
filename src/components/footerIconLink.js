@@ -12,6 +12,7 @@ const FooterIconLink = ({ fluidData, link}) => {
         href={link}
         target="_blank"
         className={`${styles.linkFormat} ${styles.socialMediaLink}`}
+        rel="noreferrer"
       >{link}
       </a>
     }

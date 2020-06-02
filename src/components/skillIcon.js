@@ -14,6 +14,7 @@ function SkillIcon({ fluidData, altData, link }){
         <a
           href={link}
           target="_blank"
+          rel="noreferrer"
         >
           {altData}
         </a>

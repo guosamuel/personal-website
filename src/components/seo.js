@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet"/>
     </Helmet>
   )
 }
