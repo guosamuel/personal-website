@@ -13,7 +13,6 @@ function Blogs({ data }){
   const [page, setPage] = useState(1)
   const BLOGS_PER_PAGE = 5
   const TOTAL_COUNT = data.allMarkdownRemark.nodes.length
-  const totalPages = Math.ceil( TOTAL_COUNT / BLOGS_PER_PAGE)
 
   const handlePageChange = (e) => {
     setPage(e)

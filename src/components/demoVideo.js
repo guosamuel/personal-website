@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './css-modules.module.css'
 
-const DemoVideo = ({ embed }) => {
+const DemoVideo = ({ embed, title }) => {
   return (
     <div className={styles.iframeContainer}>
       <iframe
@@ -11,6 +11,7 @@ const DemoVideo = ({ embed }) => {
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen="true"
+        title={title}
       >
       </iframe>
     </div>

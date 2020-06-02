@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+
 import styles from "./css-modules.module.css"
-// import MobileScreenIcon from "../components/mobileScreenIcon"
 import SkillIcon from "../components/skillIcon"
 import { websiteLinks } from "../information/icon-links"
 

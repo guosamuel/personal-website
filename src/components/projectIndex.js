@@ -14,7 +14,7 @@ const ProjectIndex = ({ demo, link, github, title, excerpt, embed, tech }) => {
         {link ? <a href={link} target="_blank" className={styles.title} rel="noreferrer">{title}</a> : title}
       </h3>
       <div dangerouslySetInnerHTML={{ __html: formattedExcerpt }} />
-      { embed ? <DemoVideo embed={embed} /> : null}
+      { embed ? <DemoVideo embed={embed} title={title}/> : null}
       <br />
         <div className={styles.madeWith}>Made with:</div>
         <div className={styles.techContainer}>

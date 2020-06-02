@@ -1,13 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
-import styles from "./css-modules.module.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { interview } from "../information/interview"
 import Question from "../components/question"
 import Answer from "../components/answer"
-
+import styles from "./css-modules.module.css"
 
 const About = () => {
 
