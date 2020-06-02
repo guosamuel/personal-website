@@ -25,7 +25,7 @@ function Projects({data}) {
 
   return (
     <Layout>
-      <SEO title="Projects" />
+      <SEO title="Samuel Guo Projects" />
       <div className={styles.projectContainer}>{allProjectIndexes}</div>
     </Layout>
   )

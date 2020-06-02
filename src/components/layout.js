@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Footer from "./footer"
+import SEO from "./seo"
 import styles from "./css-modules.module.css"
 
 const Layout = ({ children }) => {
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <div style={{ position: 'relative', minHeight: '100vh'}}>
+      <SEO title={data.site.siteMetadata.title} />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className={styles.center}>
         <main>{children}</main>

@@ -109,6 +109,7 @@
 /*****************************/
 
 @media (max-width: 370px) {
+  /***********404 PAGE***********/
   .errorNumberContainer {
     font-size: 9rem
   }
@@ -117,4 +118,5 @@
     height: 6rem;
     width: 6rem
   }
+  /******************************/
 }

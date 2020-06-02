@@ -31,7 +31,7 @@ function Blogs({ data }){
 
   return (
   <Layout>
-    <SEO title="Blogs" />
+    <SEO title="Samuel Guo Blogs" />
     <div className={styles.blogContainer}>{allBlogIndexes}</div>
     <div className={styles.paginationContainer} >
       <Pagination

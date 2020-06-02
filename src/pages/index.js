@@ -27,7 +27,7 @@ const IndexPage = () => {
 
   return(
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Samuel Guo Home" />
       <div className={styles.user}>
         <Img
           className={styles.picture}

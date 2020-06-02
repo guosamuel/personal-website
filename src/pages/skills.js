@@ -41,7 +41,7 @@ const Skills = () => {
 
   return (
     <Layout>
-      <SEO title="Skills" />
+      <SEO title="Samuel Guo Skills" />
       <div className={styles.skillIconContainer}>
         {icons}
       </div>

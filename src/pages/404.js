@@ -7,16 +7,6 @@ import SEO from "../components/seo"
 import styles from "./css-modules.module.css"
 
 const NotFoundPage = () => {
-  // const wheatly = useStaticQuery(graphql`
-  // {
-  //   imageSharp(fluid: {originalName: {eq: "wheatly.png"}}) {
-  //     id
-  //     fluid {
-  //       ...GatsbyImageSharpFluid
-  //     }
-  //   }
-  // }
-  // `)
   const data = useStaticQuery(graphql`
     {
       allFile(filter: {relativeDirectory: {eq: "404"}}) {
@@ -51,8 +41,6 @@ const NotFoundPage = () => {
         <p className={styles.errorText}>The page is a lie!</p>
         <Img id={cakeID} className={styles.cakeImage} fluid={cakeImage} />
         <p className={styles.errorText}>But good thing this cake isn't!</p>
-
-
       </div>
     </Layout>
   )

@@ -1,9 +1,12 @@
 import React from "react"
+
+import SEO from "./seo"
 import styles from "./css-modules.module.css"
 
 const BlogIndex = ({ path, date, title, excerpt }) => {
   return (
     <>
+      <SEO title={title} description={excerpt} />
       <h3>
         <a
           href={path}
