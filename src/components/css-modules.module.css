@@ -324,9 +324,23 @@
     font-size: 18px;
   }
   /************************************/
+
+  /***************SKILLS***************/
+  .iconLinkContainer {
+    margin: 1rem 0.5rem 1rem 0.5rem
+  }
+
+  .iconLinkContainer .image {
+    height: 110px;
+    width: 110px;
+  }
+  .iconLinkContainer .skillLinks {
+    font-size: 1rem;
+  }
+  /************************************/
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   /***************FOOTER***************/
   .footerIntro {
     font-size: 18px
@@ -339,6 +353,21 @@
 
   .linkFormat {
     font-size: 12px
+  }
+  /************************************/
+
+  /***************SKILLS***************/
+  .iconLinkContainer {
+    margin: 0.75rem 0.5rem 0.75rem 0.5rem
+  }
+
+  .iconLinkContainer .image {
+    height: 75px;
+    width: 75px;
+  }
+
+  .iconLinkContainer .skillLinks {
+    font-size: 0.8rem;
   }
   /************************************/
 }
