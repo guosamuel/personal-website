@@ -9,7 +9,7 @@ import styles from "./css-modules.module.css"
 const NotFoundPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: {relativeDirectory: {eq: "404"}}) {
+      allFile(filter: {relativeDirectory: {eq: "404"}}, sort: {order: ASC, fields: name}) {
         edges {
           node {
             childImageSharp {
@@ -23,10 +23,11 @@ const NotFoundPage = () => {
       }
     }`)
 
-  const wheatlyID = data.allFile.edges[0].node.childImageSharp
-  const wheatlyImage = data.allFile.edges[0].node.childImageSharp.fluid
-  const cakeID = data.allFile.edges[1].node.childImageSharp.fluid.id
-  const cakeImage = data.allFile.edges[1].node.childImageSharp.fluid
+  const cakeID = data.allFile.edges[0].node.childImageSharp.fluid.id
+  const cakeImage = data.allFile.edges[0].node.childImageSharp.fluid
+  const wheatlyID = data.allFile.edges[1].node.childImageSharp
+  const wheatlyImage = data.allFile.edges[1].node.childImageSharp.fluid
+
 
   return (
     <Layout>
